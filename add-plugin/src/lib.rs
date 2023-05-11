@@ -10,14 +10,3 @@ pub fn add(a: f32, b: f32) -> f32 {
     unsafe { log_line(log_bytes.as_ptr() as _, log_bytes.len() as _) };
     a + b
 }
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
